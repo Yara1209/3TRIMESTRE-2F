@@ -5,21 +5,24 @@
     padding:0;
 }
 
+:root{
+    --cor-do-texto:
+    --cor-cartao-frente:
+    --cor-cartao-verso: #00F4BF
+
+}
 
 body{
     background: url(img/bg-desktop.webp);
 
     font-family:'Bai Jamjuree', sans-serif;
 }
-
 footer{
     background-color: black;
     color: white;
     position: fixed;
     width: 100%;
 }
-   
-
 footer p{
     text-align: center;
     font-size: 0.6rem;
@@ -28,7 +31,7 @@ footer p{
 }
 #container{
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 .cartao{
     margin: 2rem;
@@ -47,6 +50,7 @@ footer p{
     padding: 20px;
     transform-style: preserve-3d;
     transition: transform 500ms ease-in-out;
+    
 
 
 
@@ -54,19 +58,22 @@ footer p{
 .cartao-conteudo   h3{
     padding: 0.5rem;
     text-align: left;
-    background-color: rgb(68, 15, 104);
+    background-color: rgb(15, 46, 104);
     border-radius: 0.6rem;
     position: absolute;
     font-size: 1vw;
     margin: 0.6rem;
     backface-visibility: hidden;
-    
 
 }
 .cartao-conteudo-pergunta{
+    padding-top: 70px;
     color: var(--cor-de-texto);
-    font-weight: 500
+    font-weight: 500px
 }
+
+
+
 .cartao-conteudo-pergunta,
 .cartao-conteudo-resposta{
     backface-visibility: hidden;
@@ -74,4 +81,5 @@ footer p{
 
 .cartao-conteudo-resposta{
     transform: rotateY(180deg);
+    color: blueviolet;
 }
